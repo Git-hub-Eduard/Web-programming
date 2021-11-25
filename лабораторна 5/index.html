@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let fact;
+        var arr = [];
+        for(var i = 1; i<=5; i++)
+        {
+            fact = 1
+            let j = 1;
+            while(j<=i)
+            {
+                fact = fact * j;
+                j = j+1;
+
+            }
+            arr.push(fact);
+        }
+        
+        document.writeln("<br>");
+        document.write('<table border="2">');
+        document.writeln("<tr>");
+        document.writeln("<th>Число</th>");
+        document.writeln("<th>Факторіал</th>");
+        for(var i = 0; i<arr.length; i++)
+        {
+            document.writeln("<tr>");
+            document.writeln("<td>",i+1,"</td>");
+            document.writeln("<td>",arr[i],"</td>");
+            document.writeln("</tr>");  
+        }
+        document.writeln("</tr>");        
+        document.write('</table>');
+
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
