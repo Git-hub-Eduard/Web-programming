@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var firstNumber, secondNumber, number1, number2 ,sum;
+        
+        firstNumber = window.prompt("Уведіть перше число","0");
+        secondNumber = window.prompt("Уведіть друге число","0");
+        number1 = parseInt(firstNumber);
+        number2 = parseInt(secondNumber);
+        sum = (number1+number2)/2;
+        var arr = [number1,number2,sum];
+        arr.sort();
+        for(var i =0; i<3; i++)
+        {
+            document.writeln(arr[i]," ");
+
+        }
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
